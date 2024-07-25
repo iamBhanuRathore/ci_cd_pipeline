@@ -4,9 +4,10 @@ import bodyParser from "body-parser";
 
 const app = express();
 app.use(bodyParser());
+
 app.get("/", (req, res) => {
   res.json({
-    message: "Okay boy this is good --" + theString,
+    message: "Okay boy this is good -" + theString,
   });
 });
 app.post("/", async (req, res) => {

@@ -3,10 +3,13 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@repo/ui/*": [
-        "./src/*"
+      "@repo/ui/components/*": [
+        "./src/components/*"
+      ],
+      "@repo/ui/shadcn/*": [
+        "./src/components/ui/*"
       ]
     }
   },
