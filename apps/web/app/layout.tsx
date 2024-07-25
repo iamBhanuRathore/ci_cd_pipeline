@@ -19,6 +19,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // Added a comment
   return (
     <html className="hydrated" lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
