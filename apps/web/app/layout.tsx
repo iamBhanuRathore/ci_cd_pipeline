@@ -19,6 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Another Comment
   // Added a comment
   return (
     <html className="hydrated" lang="en">
