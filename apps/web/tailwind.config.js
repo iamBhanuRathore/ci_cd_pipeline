@@ -1,4 +1,4 @@
-module.exports = require("@repo/ui/tailwind.config.ts");
+module.exports = require("@repo/ui/tailwind.config");
 
 // tailwind config is required for editor support
 
