@@ -9,6 +9,7 @@
     "nodemon": "tsc && ts-node dist/index.js",
     "lint": "eslint . --config .eslintrc.cjs --max-warnings 0",
     "build":"tsc -b",
+    "start":"node dist/index.js",
     "dev": "nodemon"
   },
   "dependencies": {

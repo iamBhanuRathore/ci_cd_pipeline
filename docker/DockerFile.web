@@ -1,0 +1,22 @@
+FROM node:20
+
+# Set the working directory inside the container
+WORKDIR /usr/src/app
+
+# Copy the package.json, package-lock.json, and turbo.json files
+COPY package*.json turbo.json ./
+
+# Copy the apps/web directory
+COPY apps/web ./apps/web
+
+# Copy the packages directory
+COPY packages ./packages
+
+# Install the dependencies
+RUN npm install
+
+# Build the web application
+RUN npm run build --prefix ./apps/web
+
+# Specify the command to run the web application
+CMD ["npm", "start", "--prefix", "./apps/web"]
