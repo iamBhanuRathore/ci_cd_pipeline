@@ -1,0 +1,21 @@
+To run the backend in docker 
+
+1.  docker build -t backend:latest . -f ./docker/DockerFile.backend
+2.  docker run -p 5000:5000 backend
+
+
+
+To run the web in docker 
+
+1.  docker build -t web:latest . -f ./docker/DockerFile.web
+2.  docker run -p 5000:5000 web
+
+
+
+To run the docs in docker 
+
+1.  docker build -t docs:latest . -f ./docker/DockerFile.docs
+2.  docker run -p 5000:5000 docs
+
+
+
