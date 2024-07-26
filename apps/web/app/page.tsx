@@ -10,8 +10,9 @@ export default function Home() {
   const isOk = myType.safeParse(obj);
   console.log(isOk);
   return (
-  <div className="bg-red-300">This is web application 
-    <Button variant="destructive">This is button using tailwind</Button>
-  </div>
+    <div className="bg-red-300">
+      This is web application
+      <Button variant="destructive">This is button using tailwind</Button>
+    </div>
   );
 }
