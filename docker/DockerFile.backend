@@ -15,6 +15,9 @@ COPY packages ./packages
 # Install the dependencies
 RUN npm install
 
+# Build the turborepo 
+RUN npm run build
+
 # Build the backend application
 RUN npx tsc -b apps/backend
 
