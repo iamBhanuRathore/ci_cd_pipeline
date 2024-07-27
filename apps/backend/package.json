@@ -15,7 +15,8 @@
   "dependencies": {
     "@repo/ui": "*",
     "@repo/common": "*",
-    "@repo/math": "*"
+    "@repo/math": "*",
+    "@repo/typescript-config":"*"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
