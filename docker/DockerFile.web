@@ -15,6 +15,9 @@ COPY packages ./packages
 # Install the dependencies
 RUN npm install
 
+# Build the turborepo 
+RUN npm run build
+
 # Build the web application
 RUN npm run build --prefix ./apps/web
 
